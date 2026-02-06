@@ -7,18 +7,13 @@ print("--- Factorial Finder ---\n")
 
 # Write your code here
 
-num = int(input("Enter Number: "))
+n = int(input("Enter Number: "))
 
-factorial = 1
-
-if num < 0:
-    print("Factorial of", num , "is Not Defined")
-    
+if n < 0:
+    print(f"Factorial of {n} is Not Defined")
 else:
-    for i in range(1, num + 1):
-        factorial *= i
-    print("factorial of" , num , "is" , factorial)
+    fact = 1
+    for x in range(1, n + 1):
+        fact = fact * x
+    print(f"Factorial of {n} is {fact}")
     
-
-
-
