@@ -11,12 +11,13 @@ num = int(input("Enter Number: "))
 
 factorial = 1
 
-if num >= 0:
-    for i in range(1, num + 1):
-       factorial *= i
-       print(factorial)
+if num < 0:
+    print("Factorial of", num , "is Not Defined")
+    
 else:
-    print("Factorial of" , num , "is Not Defined")
+    for i in range(1, num + 1):
+        factorial *= i
+    print(factorial)
     
 
 
