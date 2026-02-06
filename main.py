@@ -17,7 +17,8 @@ if num < 0:
 else:
     for i in range(1, num + 1):
         factorial *= i
-    print(factorial)
+    print("factorial of" , num , "is" , factorial)
     
+
 
 
